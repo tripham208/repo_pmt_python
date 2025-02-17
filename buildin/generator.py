@@ -3,6 +3,17 @@ def simple_generator():
     yield 2
     yield 3
 
+def generator1():
+    yield 1
+    yield 2
+
+def generator2():
+    yield from generator1()
+    yield 3
+
+for value in generator2():
+    print(value)
+# Output: 1 2 3
 
 generator_expression = (i for i in [1, 2, 3])
 
