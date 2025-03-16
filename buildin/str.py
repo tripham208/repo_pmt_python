@@ -3,7 +3,7 @@ string = "abc abc"
 list1 = ["I", "am", "not"]
 
 # PROCESSING
-if __name__ == '__main__':
+def test_processing():
     # format number
     print({
         1: f"{number:04}",  # '0004'
