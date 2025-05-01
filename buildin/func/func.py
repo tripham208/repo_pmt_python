@@ -1,3 +1,4 @@
+# scope: build-in -> global -> nonlocal -> local
 def outer():
     x = "outer"
 
@@ -8,7 +9,7 @@ def outer():
     inner()
 
 
-def test_build_in():
+if __name__ == '__main__':
     """
     - enumerate
     - zip
@@ -66,14 +67,12 @@ def test_build_in():
     print(min(numbers))  # Output: 1
 
     numbers = [4, 2, 3, 1]
-    sorted_numbers = sorted(numbers)
-    print(sorted_numbers)
+    print(sorted(numbers))
     # Output: [1, 2, 3, 4]
 
     numbers = [1, 2, 3, 4]
-    for num in reversed(numbers):
-        print(num)
-    # Output: 4 3 2 1
+    print(reversed(numbers))
+    # Output: [4, 3, 2, 1]
 
 
 

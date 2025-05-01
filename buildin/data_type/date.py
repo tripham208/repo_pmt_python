@@ -28,6 +28,7 @@ if __name__ == '__main__':
     print(weekday)
 
     print(date_duration)
+    print(date_duration.days)
 
     print(iso)
     print(cus)

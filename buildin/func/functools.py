@@ -1,8 +1,6 @@
 from functools import reduce
 
-
-def test_func_tools():
+if __name__ == '__main__':
     numbers = [1, 2, 3, 4]
-    product = reduce(lambda x, y: x * y, numbers)
-    print(product)
+    print(reduce(lambda x, y: x * y, numbers))
     # Output: 24

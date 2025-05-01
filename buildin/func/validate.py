@@ -6,12 +6,11 @@ class Dog(Animal):
     pass
 
 
-def test_build_in_validate():
+if __name__ == '__main__':
     """
     - callable
     - isinstance
     - issubclass
-    :return:
     """
     print(callable(print))  # Output: True
     print(callable(5))  # Output: False

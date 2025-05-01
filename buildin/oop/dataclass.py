@@ -11,7 +11,7 @@ class DataClass:
 
     """
     __slots__ = ('x', 'y')
-    #Reducing the memory footprint of dataclass instances
+    # Reducing the memory footprint of dataclass instances
 
     attr1: str
     attr2: float = 0.0
